@@ -63,7 +63,7 @@ nav>div{
     max-width: 1600px;
     margin: 0 auto;
     height: 760px;
-    background-image: url(/assets/hero-bg.png);
+    background-image: url(assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;
@@ -87,7 +87,7 @@ nav>div{
     height: 350px;
     margin: 0 auto;
     background-size:auto;
-    background-image: url(/assets/hero-circle.png);
+    background-image: url(assets/hero-circle.png);
     background-position: center ;
     background-repeat: no-repeat;
     padding: 20px 100px;
@@ -330,7 +330,7 @@ p{
 /* footer section styles */
 
 .footer{
-    background-image: url(/assets/footer-bg.png);
+    background-image: url(assets/footer-bg.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
