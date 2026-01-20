@@ -87,7 +87,7 @@ nav>div{
     height: 350px;
     margin: 0 auto;
     background-size:auto;
-    background-image: url(assets/hero-circle.png);
+    background-image: url(/assets/hero-circle.png);
     background-position: center ;
     background-repeat: no-repeat;
     padding: 20px 100px;
