@@ -45,9 +45,15 @@ nav>div{
     gap: 32px;
 
 }
+.display-flex{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
 .btn-primary{
-    padding: 12px 16px;
+    padding: 12px 20px;
     border-radius: 100px;
+    
     font-size: 16px;
     font-weight:500;
     color: #ffff;
@@ -55,6 +61,31 @@ nav>div{
                     rgba(247, 233, 63, 1), 
                     rgba(251, 9, 180, 1),
                     rgba(145, 0, 248, 1));
+}
+
+/* secondery-botton */
+
+.btn-container {
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 100px;
+    font-weight: 500;
+    padding: 12px 20px;
+    
+    
+}
+.primary{
+    color: #ffff;
+    background-image: linear-gradient(47deg,
+                    rgba(247, 233, 63, 1), 
+                    rgba(251, 9, 180, 1),
+                    rgba(145, 0, 248, 1));
+}
+.secondary{
+    color: #00FF88;
+    background-color: transparent;
+    border: 1px solid #00FF88;
 }
 
 /*Hero section styles */
@@ -75,11 +106,12 @@ nav>div{
     
     width: 550px;
     height: 560px;
-    margin: 100px 525px;
+    padding-top: 100px;
+    /* margin: 200px 525px; */
     align-content: center;
     justify-items: center;
     text-align: center;
-    margin:100px 100px auto 100px ;
+    /* margin:100px 100px auto 100px ; */
   
 }
 #hero-bg-image{
@@ -90,7 +122,6 @@ nav>div{
     background-image: url(/assets/hero-circle.png);
     background-position: center ;
     background-repeat: no-repeat;
-    border: 1px solid red;
     padding-top: 85px;
     text-align:center;
  
@@ -106,7 +137,7 @@ nav>div{
     padding: 8px 16px;
     display: block;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
     margin-top: -250px;
     margin-left: 250px;
     border-radius: 25px;
@@ -156,7 +187,7 @@ nav>div{
     align-items: center;
     height: 1px;
     opacity: 10%;
-    background-color: red;
+    background-color: #D9D9D9
  
 }
 
@@ -275,13 +306,18 @@ nav>div{
     gap: 16px;
 }
 .social-icons img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    align-content: center;
     align-items: center;
+}
+.social-icon img:hover {
+    width: 25px;
+    height: 25px;
 }
 .social-icons a:hover{
     
-    border:2px solid #fff;
+    border:1px solid #fff;
 }
 .social-icons a{
     width: 60px;
@@ -389,6 +425,9 @@ p{
     padding-left: 10px;
     align-items: center;
 }
+.footer-container p{
+    padding-top: 40px;
+}
 
 
 
@@ -427,7 +466,7 @@ p{
 /* Tablet Device Styles */
 @media screen and (min-width:575px) and (max-width:992px){
     nav{
-        width: 100%;
+        width: 440px;
         flex-direction: row;
         padding: 18px 20px;
         align-items: center;
@@ -439,6 +478,7 @@ p{
     .exclusive {
         grid-column: span 2;
     }
+   
 
 }
 
@@ -470,7 +510,7 @@ p{
 .hero-container .hero-bg{
     width: 500px;
     height: 485px;
-    margin:0px 80px;
+    padding-top: 0px;
 
     
  
@@ -513,9 +553,10 @@ p{
     padding-bottom:20px;
 }
 #horizontal-line{
-    width: 400px;
+    width: 440px;
     height: 1px;
     opacity: 10%;
+    color: #D9D9D9;
 
 }
 .stats{
