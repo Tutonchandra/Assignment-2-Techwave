@@ -63,7 +63,7 @@ nav>div{
     max-width: 1600px;
     margin: 0 auto;
     height: 760px;
-    background-image: url(./assets/hero-bg.png);
+    background-image: url(/assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;
