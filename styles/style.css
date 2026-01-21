@@ -257,14 +257,17 @@ nav>div{
     
 }
 .video-section{
-    width: 440px;
-    height:auto;
-    background-color: #230E3D;
     border-radius: 24px;
+    background-color: #230E3D;
+    
 
 }
-.video-section img{
-    width: 100%;
+.video-section iframe{
+    width:380px;
+    height:200px;
+    border-radius: 24px ;
+    align-content: center;
+    align-items: center;
 
 }
 .title-section{
@@ -649,6 +652,12 @@ p{
     padding: 0px 0px;
 }
 
+.video-section iframe{
+    width:100%;
+    
+
+}
+
 .host-container{
     width: 440px;
     display: flex;
@@ -671,7 +680,6 @@ p{
 /* footer section mobile device styles */
 .footer-container {
   width: 440px;
-  height: 248px;
   display: flex;
   flex-direction: column;
   
