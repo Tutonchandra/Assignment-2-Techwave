@@ -29,6 +29,9 @@ nav{
     padding: 16px 200px;
 }
 .nav-container{
+    
+    border-bottom: 1px solid #412567;
+    background-color: #1A0B2E;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -166,7 +169,7 @@ nav>div{
     
 }
 .hero-bg p{
-    width: 440px;
+    width: 500px;
     text-align: center;
     font-weight: 400;
     line-height: 19px;
@@ -206,7 +209,7 @@ nav>div{
     align-items: center;
     height: 1px;
     opacity: 10%;
-    background-color: #D9D9D9
+    background-color: #ffff;
  
 }
 
@@ -553,7 +556,10 @@ p{
 
     
  
-}   
+} 
+.hero-bg p{
+    width: 400px;
+}  
 #hero-bg-image{
     width: 150px;
     height: 150px;
@@ -676,6 +682,7 @@ p{
 
 .text-container{
     text-align: center;
+    align-items: center;
 }
 /* footer section mobile device styles */
 .footer-container {
