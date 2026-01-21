@@ -102,7 +102,7 @@ nav>div{
     /* width: 1200px; */
     margin: 0 auto;
     height: 760px;
-    background-image: url(/assets/hero-bg.png);
+    background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center top;
@@ -125,7 +125,7 @@ nav>div{
     height: 350px;
     margin: 0 auto;
     background-size:auto;
-    background-image: url(/assets/hero-circle.png);
+    background-image: url(../assets/hero-circle.png);
     background-position: center ;
     background-repeat: no-repeat;
     padding-top: 85px;
@@ -147,7 +147,14 @@ nav>div{
     margin-top: -250px;
     margin-left: 250px;
     border-radius: 25px;
+    transition: background-color 2s, color 2s ;
 }
+.badge:hover{
+    width: 100px;
+    background-color: #1A0B2E;
+    color: red;
+}
+
 
 .hero-bg h2{
     font-size: 3.75rem;
@@ -398,7 +405,7 @@ p{
 /* footer section styles */
 
 .footer{
-    background-image: url(/assets/footer-bg.png);
+    background-image: url(../assets/footer-bg.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
@@ -415,6 +422,7 @@ p{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 0px;
 }
 
 .social-links {
