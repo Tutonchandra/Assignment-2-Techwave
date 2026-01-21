@@ -9,6 +9,7 @@ body{
     font-family: "Inter", sans-serif;
     background-color: #1A0B2E;
     color: #ffff;
+    
 }
 body p{
     font-size: 16px;
@@ -45,8 +46,13 @@ nav>div{
     gap: 32px;
 
 }
+.humburger-icon{
+    display: none;
+}
+
 .display-flex{
     display: flex;
+    flex-direction: row;
     margin-top: 20px;
     gap: 20px;
 }
@@ -66,11 +72,12 @@ nav>div{
 /* secondery-botton */
 
 .btn-container {
-    width: 200px;
-    height: 40px;
+    
+    
     font-size: 1rem;
-    border-radius: 100px;
+    border-radius: 50px;
     font-weight: 500;
+    /* padding: 15px 10px; */
     padding: 12px 20px;
     
     
@@ -92,11 +99,12 @@ nav>div{
 
 .hero-container{
     max-width: 1600px;
+    /* width: 1200px; */
     margin: 0 auto;
     height: 760px;
     background-image: url(/assets/hero-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     background-position: center top;
     
     justify-items: center;
@@ -107,11 +115,9 @@ nav>div{
     width: 550px;
     height: 560px;
     padding-top: 100px;
-    /* margin: 200px 525px; */
     align-content: center;
     justify-items: center;
     text-align: center;
-    /* margin:100px 100px auto 100px ; */
   
 }
 #hero-bg-image{
@@ -164,21 +170,27 @@ nav>div{
 }
 
 /* about section related styles */
+
 .about-section{
     max-width: 1600px;
-    width: 1200px;
     height: 646px;
     margin: 0px auto;
 }
-.about-container{
-    margin: 50px 200px 120px 200px;
+.about-container{ 
+    margin: 0 auto;
+    width: 1200px;
+    
 }
-.about-container h2{
+.about-heading{
+    padding: 50px 200px 120px 200px;
+    
+}
+.about-heading h2{
     font-size: 4rem;
     text-align: center;
     text-transform: capitalize;
 }
-.about-container p{
+.about-heading p{
     text-align: center;
     opacity: 80%;
 }
@@ -228,13 +240,7 @@ nav>div{
     margin-bottom: 40px;
     
 }
-/* .heading-section .feature-container{
-    
-    height: 600px;
-    
-    border-color: 5px solid red;
 
-} */
 .feature-container{
     display: flex;
     flex-direction: row;
@@ -244,7 +250,7 @@ nav>div{
     
 }
 .video-section{
-    width: 400px;
+    width: 440px;
     height:auto;
     background-color: #230E3D;
     border-radius: 24px;
@@ -279,7 +285,7 @@ nav>div{
     flex-direction: row;
     padding: 40px;
     border-radius: 24px;
-    background-color: hsla(266, 71%, 23%, 0.404);
+    background-color: #35116468;
     gap: 24px;
 }
 .host-container>img{
@@ -348,6 +354,7 @@ nav>div{
     
 }
 
+/* check in mobile device */
 .heading {
     text-align: center;
     margin-bottom: 40px;
@@ -361,7 +368,7 @@ nav>div{
 }
 
 .card {
-    background: hsla(266, 71%, 23%, 0.406); 
+    background: #35116468; 
     padding: 40px;
     border-radius: 24px;
     display: flex;
@@ -387,10 +394,11 @@ p{
     
 
 }
+/* check in mobile device */
 /* footer section styles */
 
 .footer{
-    background-image: url(assets/footer-bg.png);
+    background-image: url(/assets/footer-bg.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
@@ -429,10 +437,7 @@ p{
     padding-top: 40px;
 }
 
-
-
-/* Dextop Device Styles */
-@media screen and (min-width:992px){
+/* grid start */
 
 .heading{
     font-size: 3rem;
@@ -440,7 +445,9 @@ p{
     }
     
 .feature-grid {
-        grid-template-columns: repeat(3, 1fr); /* ৩ কলামের মূল গ্রিড */
+    display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 40px;
     }
 
 .premium {
@@ -459,7 +466,16 @@ p{
         grid-column: span 1;
     }
     
-    .card { padding: 40px; }
+ .card { 
+    padding: 40px;
+ }
+/* grid end */
+
+/* Dextop Device Styles */
+@media screen and (max-width:992px){
+
+
+ 
 }
 
 
@@ -471,14 +487,16 @@ p{
         padding: 18px 20px;
         align-items: center;
     }
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr); /* ২ কলাম */
+    .humburger-icon{
+    display: none;   
+}
+    nav .menu-container{
+        display:none;
+        
     }
-    
-    .exclusive {
-        grid-column: span 2;
-    }
-   
+    nav .btn-primary{
+    display: none;
+}
 
 }
 
@@ -493,10 +511,17 @@ p{
         width: 137px;
         height: 20px;
     }
-    nav>div{
+    nav .menu-container{
         display:none;
         
     }
+    .humburger-icon{
+        width: 40px;
+        height: 30px;
+
+        display: block;
+    }
+    
     
     .btn-primary{
         display: none;
@@ -504,8 +529,10 @@ p{
 
     .hero-container{
     width: 440px;
-    height: 466px;
-    justify-items: center;
+    height: 446px;
+    background-size: cover;
+    background-position:center;
+    
 }
 .hero-container .hero-bg{
     width: 500px;
@@ -516,16 +543,16 @@ p{
  
 }   
 #hero-bg-image{
-    width: 200px;
-    height: 200px;
-    padding-top:85px;
+    width: 150px;
+    height: 150px;
+    padding-top:50px;
     background-size: contain;
-    margin: 20px 10px;
+    margin: 0px 0px;
   
 }
 .hero-bg img{
-    width: 70px;
-    height: 80px;
+    width: 50px;
+    height: 100px;
     padding-bottom: 40px;
     justify-content: center;
     align-content: center;
@@ -533,24 +560,35 @@ p{
 
 .badge{
     font-size: 1rem;
-    margin-top: -170px;
-    margin-left: 140px;
+    margin-top: -130px;
+    margin-left: 110px;
 }
 
 /* about section Mobile */
+
 .about-section{
+    background-color: #1A0B2E;
+    height:auto;
+    padding: 100px 0px;
+    margin: 0px auto;
     
-    width: 440px;
-    height: 575px;
-    margin: 0 auto;
 }
 .about-container{
-    margin: 50px 20px;
+    width: 440px;
+    height: auto;
 }
-.about-container h2{
+.about-heading{
+    
+    padding: 40px 20px;
+}
+.about-heading h2{
     font-size: 2rem;
     font-weight: 700px;
     padding-bottom:20px;
+}
+.about-heading p{
+    
+    opacity: 80%;
 }
 #horizontal-line{
     width: 440px;
@@ -563,6 +601,7 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top:0px;
+    padding: 20px;
     gap: 40px;
 }
  /* grid section */
@@ -583,12 +622,13 @@ p{
     font-size: 2rem;
 
 }
+
 .heading-section{
     
     width: 440px;
     align-content: center;
-    margin:0;
-    padding: 100px 0;
+    margin:0 auto;
+    padding: 100px 0px;
 }
 .heading-section h3{
     font-size: 2rem;
@@ -601,7 +641,7 @@ p{
 }
 
 .host-container{
-    width: 400px;
+    width: 440px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -633,5 +673,27 @@ p{
     gap: 5px;
   }
 
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+
+
+
+
+
+
+.resources{
+    grid-column: span 1;
+}
 
 }
