@@ -144,7 +144,7 @@ nav>div{
     display: block;
     text-transform: uppercase;
     position: absolute;
-    margin-top: -100px;
+    margin-top: -250px;
     margin-left: 250px;
     border-radius: 25px;
     transition: background-color 2s, color 2s ;
@@ -428,6 +428,7 @@ p{
 .social-links {
     list-style: none;
     display: flex;
+
     justify-content: center;
     gap: 30px;
     align-items: center;
@@ -678,6 +679,8 @@ p{
 .social-links {
     margin: 20px 30px;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
     gap: 5px;
   }
 
